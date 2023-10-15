@@ -61,7 +61,7 @@
 
 ## Github Repositories used for this course
 - [azure-kubernetes-service-agic](https://github.com/stacksimplify/azure-kubernetes-service-agic)
-- [Course Presentation](https://github.com/stacksimplify/azure-kubernetes-service-agic/course-presentation)
+- [Course Presentation](https://github.com/stacksimplify/azure-kubernetes-service-agic/tree/main/course-presentation)
 - **Important Note:** Please go to these repositories and FORK these repositories and make use of them during the course.
 
 ## Each of my courses come with
