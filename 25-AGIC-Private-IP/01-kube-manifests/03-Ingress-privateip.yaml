@@ -1,0 +1,22 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ingress-privateip
+  annotations:
+    appgw.ingress.kubernetes.io/use-private-ip: "true" 
+spec:
+  ingressClassName: azure-application-gateway
+  rules:
+    - http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: echoserver-clusterip-service
+                port: 
+                  number: 80                  
+                                                 
+                  
+      
+

@@ -1,0 +1,29 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ingress-e2e-ssl
+  annotations:
+    appgw.ingress.kubernetes.io/ssl-redirect: "true"
+    # Backend Annotations
+    appgw.ingress.kubernetes.io/backend-hostname: "backend.kubeoncloud.com" # Optional
+    appgw.ingress.kubernetes.io/backend-protocol: "https"
+    appgw.ingress.kubernetes.io/appgw-trusted-root-certificate: "backend-tls"
+spec:
+  ingressClassName: azure-application-gateway
+  # SSL Certs - Associate using Kubernetes Secrets         
+  tls:
+  - secretName: frontend-tls-secret
+    hosts:
+    - frontend.kubeoncloud.com
+  rules:
+    - host: frontend.kubeoncloud.com
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: myapp-nginx-clusterip-service
+                port: 
+                  number: 443                                                              
+                     

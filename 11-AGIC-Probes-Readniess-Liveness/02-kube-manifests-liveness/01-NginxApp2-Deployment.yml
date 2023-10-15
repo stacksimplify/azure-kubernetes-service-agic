@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app2-nginx-deployment
+  labels:
+    app: app2-nginx 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: app2-nginx
+  template:
+    metadata:
+      labels:
+        app: app2-nginx
+    spec:
+      containers:
+        - name: app2-nginx
+          image: ghcr.io/stacksimplify/kube-nginxapp2:1.0.0
+          ports:
+            - containerPort: 80
+          livenessProbe:
+            httpGet:
+              path: /app2/index.html
+              port: 80
+              httpHeaders:
+              - name: Custom-Header
+                value: APP2
+            initialDelaySeconds: 5
+            periodSeconds: 30

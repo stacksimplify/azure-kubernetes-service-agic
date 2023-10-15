@@ -1,0 +1,13 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: myapp-ingress-service
+spec:
+  ingressClassName: azure-application-gateway
+  defaultBackend:
+    service:
+      name: myapp-nginx-clusterip-service
+      port: 
+        number: 80
+      
+

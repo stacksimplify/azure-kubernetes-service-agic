@@ -1,0 +1,27 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: nginxapp1-ingress-service
+  annotations:
+    # Health Probe Annotations
+    appgw.ingress.kubernetes.io/health-probe-hostname: "myapp1.stacksimplify.com"
+    appgw.ingress.kubernetes.io/health-probe-port: "80"
+    appgw.ingress.kubernetes.io/health-probe-path: /app1/index.html
+    appgw.ingress.kubernetes.io/health-probe-status-codes: "200-205, 206"
+    appgw.ingress.kubernetes.io/health-probe-interval: "32"    
+    appgw.ingress.kubernetes.io/health-probe-timeout: "32"
+    appgw.ingress.kubernetes.io/health-probe-unhealthy-threshold: "4"
+spec:
+  ingressClassName: azure-application-gateway
+  rules:
+    - http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: app1-nginx-clusterip-service
+                port: 
+                  number: 80
+      
+

@@ -1,0 +1,21 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ingress-selfsigned-ssl-tls
+spec:
+  ingressClassName: azure-application-gateway
+  # SSL Certs - Associate using Kubernetes Secrets         
+  tls:
+  - secretName: app1-secret
+  rules:
+    - host: app1.kubeoncloud.com
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: myapp-nginx-clusterip-service
+                port: 
+                  number: 80                                                              
+                     

@@ -1,0 +1,20 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ingress-waf
+  annotations:
+    appgw.ingress.kubernetes.io/waf-policy-for-path: "/subscriptions/82808767-144c-4c66-a320-b30791668b0a/resourceGroups/agicdemo/providers/Microsoft.Network/applicationGatewayWebApplicationFirewallPolicies/myapp1-waf-policy1"
+spec:
+  ingressClassName: azure-application-gateway
+  rules:
+    - host: myapp1.kubeoncloud.com
+      http:
+        paths:
+          - path: /app1
+            pathType: Prefix
+            backend:
+              service:
+                name: app1-nginx-clusterip-service
+                port: 
+                  number: 80
+

@@ -1,0 +1,19 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: myapp-ingress-service
+  annotations:
+    appgw.ingress.kubernetes.io/override-frontend-port: "8080"
+spec:
+  ingressClassName: azure-application-gateway
+  rules:
+    - http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: myapp-nginx-clusterip-service
+                port: 
+                  number: 80
+      

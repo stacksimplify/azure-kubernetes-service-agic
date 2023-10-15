@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: myapp-nginx-deployment
+  labels:
+    app: myapp-nginx
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: myapp-nginx
+  template:
+    metadata:
+      labels:
+        app: myapp-nginx
+    spec:
+      containers:
+        - name: myapp-nginx
+          image: ghcr.io/stacksimplify/kubenginx:1.0.0
+          ports:
+            - containerPort: 80
+
+   
