@@ -1,6 +1,6 @@
 # [Azure Kubernetes Service AGIC Ingress: 30 Real-World Demos](https://links.stacksimplify.com/azure-kubernetes-service-agic)
 
-[![Image](azure-agic.png "Azure Kubernetes Service AGIC Ingress: 30 Real-World Demos")](https://links.stacksimplify.com/azure-kubernetes-service-agic)
+[![Image](azure-agic1.png "Azure Kubernetes Service AGIC Ingress: 30 Real-World Demos")](https://links.stacksimplify.com/azure-kubernetes-service-agic)
 
 
 
