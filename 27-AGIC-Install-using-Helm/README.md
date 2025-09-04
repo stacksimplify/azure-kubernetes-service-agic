@@ -182,27 +182,34 @@ Azure Cloud Shell -> Upload -> helm-config.yaml
 # List Helm repositories
 helm repo list
 
-# Add Helm Repository
-helm repo add application-gateway-kubernetes-ingress https://appgwingress.blob.core.windows.net/ingress-azure-helm-package/
-helm repo update
+# Add Helm Repository (RETIRED)
+(RETIRED - OLD REPO) helm repo add application-gateway-kubernetes-ingress https://appgwingress.blob.core.windows.net/ingress-azure-helm-package/
+(RETIRED - OLD REPO) helm repo update
 
 # List Helm repositories
-helm repo list
+(RETIRED - OLD REPO) helm repo list
 
 # Search Helm Repo (latest chart versions)
-helm search repo application-gateway-kubernetes-ingress 
+(RETIRED - OLD REPO) helm search repo application-gateway-kubernetes-ingress 
 
 # Search Helm Repo (All Chart Versions)
-helm search repo -l application-gateway-kubernetes-ingress --versions
+(RETIRED - OLD REPO) helm search repo -l application-gateway-kubernetes-ingress --versions
 
 # Upload helm-config.yaml to Azure Cloud Shell
 helm-config.yaml
 
 # Install Helm Release
-helm install ingress-azure \
+(RETIRED - OLD REPO) helm install ingress-azure \
   -f helm-config.yaml \
   application-gateway-kubernetes-ingress/ingress-azure \
   --version 1.7.2
+
+# (NEW COMMAND) - Install Helm Release using OCI REPO
+helm install oci://mcr.microsoft.com/azure-application-gateway/charts/ingress-azure \
+     --name ingress-azure \
+     --version 1.8.1 \
+     --namespace default \
+    -f helm-config.yaml
 ```
 
 ## Step-13: Verify the Installed Helm Release
