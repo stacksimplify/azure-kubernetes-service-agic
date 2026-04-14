@@ -1,14 +1,14 @@
-# [Azure Kubernetes Service AGIC Ingress: 30 Real-World Demos](https://links.stacksimplify.com/azure-kubernetes-service-agic)
+# [Azure Kubernetes Service AGIC Ingress: 30 Real-World Demos](https://stacksimplify.com/courses/azure-aks-agic/)
 
-[![Image](azure-agic1.png "Azure Kubernetes Service AGIC Ingress: 30 Real-World Demos")](https://links.stacksimplify.com/azure-kubernetes-service-agic)
+[![Image](azure-agic1.png "Azure Kubernetes Service AGIC Ingress: 30 Real-World Demos")](https://stacksimplify.com/courses/azure-aks-agic/)
 
 
 
-## [Course Details](https://links.stacksimplify.com/azure-kubernetes-service-agic)
-- **Title:** [Azure Kubernetes Service AGIC Ingress: 30 Real-World Demos](https://links.stacksimplify.com/azure-kubernetes-service-agic)
+## [Course Details](https://stacksimplify.com/courses/azure-aks-agic/)
+- **Title:** [Azure Kubernetes Service AGIC Ingress: 30 Real-World Demos](https://stacksimplify.com/courses/azure-aks-agic/)
 - **Sub Title:** Ingress URL & Domain Routing, Health Probes, Helm, Cert-Manager, External DNS, Lets Encrypt, E2E SSL, WAF, Rewrite Rules
 
-## [Course Modules](https://links.stacksimplify.com/azure-kubernetes-service-agic)
+## [Course Modules](https://stacksimplify.com/courses/azure-aks-agic/)
 01. AGIC Install Greenfield
 02. AGIC Default Backend
 03. AGIC Ingress Paths
@@ -40,7 +40,7 @@
 29. AGIC Watch Namespaces
 
 
-## [What will students learn in your course?](https://links.stacksimplify.com/azure-kubernetes-service-agic)
+## [What will students learn in your course?](https://stacksimplify.com/courses/azure-aks-agic/)
 - You will master each and every Ingress concept on Azure Application Gateway Ingress Controller (AGIC) with 30+ Real-World Demos
 - You will implement Path based and Domain based Routing using Ingress Service
 - You will implement 5 demos for Health Probes in combination with Ingress Annotations, Readiness, liveness probes
@@ -53,19 +53,19 @@
 - You will implement Azure Application Gateway Ingress Controller (AGIC) Watch Namespaces concept with 2 practical demos. 
 - You will also implement Ingress important concepts cookie based affinity, backend path prefix, backend hostname, override frontend ports and Rewrite Rule sets
 
-## [What are the requirements or prerequisites for taking your course?](https://links.stacksimplify.com/azure-kubernetes-service-agic)
+## [What are the requirements or prerequisites for taking your course?](https://stacksimplify.com/courses/azure-aks-agic/)
 - You must have Kubernetes knowledge and experience to follow with me for hands-on activities.
 
-## [Who is this course for?](https://links.stacksimplify.com/azure-kubernetes-service-agic)
+## [Who is this course for?](https://stacksimplify.com/courses/azure-aks-agic/)
 - This course is designed for students who have completed my Azure Kubernetes Service with Azure DevOps and Terraform course
 - Infrastructure Architects or Sysadmins or Developers or DevOps Engineers who are planning to master Internet Edge traffic for Azure AKS Clusters using Load Balancers
 
-## [Github Repositories used for this course](https://links.stacksimplify.com/azure-kubernetes-service-agic)
+## [Github Repositories used for this course](https://stacksimplify.com/courses/azure-aks-agic/)
 - [azure-kubernetes-service-agic](https://github.com/stacksimplify/azure-kubernetes-service-agic)
 - [Course Presentation](https://github.com/stacksimplify/azure-kubernetes-service-agic/tree/main/course-presentation)
 - **Important Note:** Please go to these repositories and FORK these repositories and make use of them during the course.
 
-## [Each of my courses come with](https://links.stacksimplify.com/azure-kubernetes-service-agic)
+## [Each of my courses come with](https://stacksimplify.com/courses/azure-aks-agic/)
 - Amazing Hands-on Step By Step Learning Experiences
 - Practical demos for each and every concept
 - Friendly Support in the Q&A section
